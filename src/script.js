@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carList = document.getElementById('carList');
     cars = [];
     loadCarsBtn.addEventListener('click', () => {
-        fetch('https://jolly-sea-099112303.5.azurestaticapps.net')
+        fetch('https://subm-lab6.azurewebsites.net')
             .then(response => response.json())
             .then(data => {
                 cars = data;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 function addCar(newCar) {
-    fetch('https://jolly-sea-099112303.5.azurestaticapps.net', {
+    fetch('https://subm-lab6.azurewebsites.net', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
